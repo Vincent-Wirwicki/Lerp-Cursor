@@ -1,3 +1,3 @@
 # Lerp-Cursor
 
-A simple project using lerp function to make a custom cursor
+A simple project using lerp function to make a custom cursor. Vanilla Js only.
