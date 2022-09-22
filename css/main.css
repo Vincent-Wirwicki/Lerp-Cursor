@@ -4,28 +4,43 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@900&display=swap');
+
 body {
   overflow: hidden;
-  /* cursor: none; */
+  font-family: 'Figtree', sans-serif;
+  background-color: #1d2026;
+  color:#f2eddc;
 }
 
-#container {
-  width: 100%;
+.container {
+  width: 100vw;
   height: 100vh;
-  background-color: #1d2026;
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 5rem;
+  pointer-events: none;
 }
 
 .cursor {
-  position: absolute;
+  position: fixed;
   z-index: 2;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #f2eddc;
-  /* border: #f2eddc solid 1px; */
   mix-blend-mode: difference;
   will-change: transform;
 }
+
+.cursor:nth-of-type(2){
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: solid #f2eddc 1px;
+}
+
