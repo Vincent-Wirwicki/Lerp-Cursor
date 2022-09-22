@@ -11,9 +11,13 @@ body {
   font-family: 'Figtree', sans-serif;
   background-color: #1d2026;
   color:#f2eddc;
+  user-select: none;
 }
 
 .container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -21,26 +25,58 @@ body {
   align-items: center;
 }
 
-h1{
-  font-size: 5rem;
-  pointer-events: none;
+.title {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+}
+
+.title:hover{
+  mix-blend-mode: difference;
+
 }
 
 .cursor {
   position: fixed;
-  z-index: 2;
+  z-index: -1;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #f2eddc;
-  mix-blend-mode: difference;
-  will-change: transform;
+  transition: height 300ms ease-out, width 300ms ease-out;
+  will-change: transform, width, height;
 }
 
 .cursor:nth-of-type(2){
   width: 20px;
   height: 20px;
-  background: none;
-  border: solid #f2eddc 1px;
 }
+
+.background__white{
+  background: #f2eddc;
+}
+
+.border__white{
+  border:1px solid #f2eddc
+}
+
+/* .bakground__none{
+  background:none;
+}
+
+.background__black{
+  background: #1d2026;
+}
+
+.border__black{
+  border: 1px solid #1d2026;
+}
+
+.border__none{
+  border: none;
+} */
+
+
 
