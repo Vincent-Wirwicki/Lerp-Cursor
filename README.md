@@ -1,3 +1,4 @@
 # Lerp-Cursor
 
-A simple project using lerp function to make a custom cursor. Vanilla Js only.
+Custom cursor animated with lerp function  [Demo here](https://codepen.io/vincent-wrck/pen/OJZjevM)  
+I also made another custom cursor without lerp function [Demo here](https://codepen.io/vincent-wrck/pen/oNwaMPL)  
